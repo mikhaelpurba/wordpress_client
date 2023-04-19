@@ -14,3 +14,6 @@ doc/api/
 
 # Config files
 *.json
+
+.flutter-plugins-dependencies
+.flutter.plugins

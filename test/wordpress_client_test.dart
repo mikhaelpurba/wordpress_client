@@ -35,7 +35,7 @@ Future<void> main() async {
     bootstrapper: (builder) => builder
         .withDefaultMaxRedirects(5)
         .withFollowRedirects(true)
-        .withRequestTimeout(60)
+        .withRequestTimeout(const Duration(seconds: 60))
         .withStatisticDelegate((requestUrl, endpoint, count) {
           print('$requestUrl => $endpoint => $count');
         })
